@@ -10,4 +10,4 @@ Please set the following variables
 
 *gcloud projects list*
 
-- change the path_to_context - it is the path to your local credentials file 
+- change the path to cred file - credentials in provider
