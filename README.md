@@ -2,7 +2,7 @@
 
 This is a Terraform workshop. We have some cases here which you can reproduce in your FCP account.
 
-TO start working with the repo, please go to GCP folder and run the Cases one by one.
+To start working with the repo, please go to GCP folder and run the Cases one by one.
 
 ### Timeline
 - 10:00 - 10:30 Registration

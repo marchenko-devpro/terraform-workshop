@@ -19,7 +19,7 @@ resource "google_compute_firewall" "firewall_external" {
     protocol = "udp"
     ports    = ["80", "443" ,"8200", "22", "8080"]
   }
-  source_ranges = ["195.88.124.221/32", "109.87.18.46/32",]
+  source_ranges = ["195.88.124.221/32", "82.207.109.122/32",]
   target_tags   = ["${var.environment}"]
 }
 resource "google_compute_firewall" "firewall_internal" {
