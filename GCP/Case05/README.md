@@ -13,4 +13,3 @@ Please set the following variables in the init.sh
 
 - change the cloudflare_email. If you have already created an CloudFlare account, this is your email address here
 
-
