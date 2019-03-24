@@ -8,7 +8,7 @@ output "vm_external_ip" {
 }*/
 
 resource "local_file" "key" {
-  content     = "\n${tls_private_key.ssh.private_key_pem}"
+  content     = "${tls_private_key.ssh.private_key_pem}"
   filename = "key"
   provisioner "local-exec" {
     command = "chmod 600 key"

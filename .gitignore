@@ -2,5 +2,4 @@
 key
 terraform.tfstate
 terraform.tfstate.backup
-GCP/Case01/variables.auto.tfvars
 init.sh
