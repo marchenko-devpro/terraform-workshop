@@ -1,11 +1,6 @@
 ############################## SQL Pass ###########################
-/*
-data "vault_generic_secret" "sql" {
-  path = "devopsflow/${var.environment}/сonfig"
-}
 
-*/
-# Put info to vault for API, Identity, etc. components usage
+# Place some files info vault
 resource "vault_generic_secret" "sqlpass" {
   path = "devopsflow/${var.project_name}/${var.environment}/config"
 
