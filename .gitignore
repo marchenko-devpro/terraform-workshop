@@ -2,4 +2,3 @@
 key
 terraform.tfstate
 terraform.tfstate.backup
-init.sh
