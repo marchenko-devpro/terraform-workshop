@@ -7,7 +7,7 @@ data "vault_generic_secret" "sql" {
 */
 # Put info to vault for API, Identity, etc. components usage
 resource "vault_generic_secret" "sqlpass" {
-  path = "devopsflow/${var.environment}/config"
+  path = "devopsflow/${var.project_name}}/${var.environment}/config"
 
   data_json = <<EOT
 {
