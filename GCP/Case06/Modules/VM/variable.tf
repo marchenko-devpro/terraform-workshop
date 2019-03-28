@@ -47,6 +47,6 @@ variable "domain_name" {
   default     = "sergii.pp.ua"
 }
 
-variable "path_to_context" {
-  description = "Define the path to the context file"
-}
+#variable "path_to_context" {
+#  description = "Define the path to the context file"
+#}
