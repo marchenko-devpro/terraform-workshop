@@ -40,13 +40,11 @@ resource "google_sql_database" "database" {
 resource "google_sql_user" "sqladmin" {
   name     = "sqladmin"
   instance = "${google_sql_database_instance.sql_instance.name}"
-  host     = "${var.domain_name}"
   password = "${random_string.adminpassword.result}"
 }
 
 resource "google_sql_user" "sqluser" {
   name     = "sqluser"
   instance = "${google_sql_database_instance.sql_instance.name}"
-  host     = "${var.domain_name}"
   password = "${random_string.userpassword.result}"
 }
