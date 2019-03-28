@@ -3,9 +3,6 @@ resource "google_compute_target_pool" "http-lb" {
   region = "${var.region}"
 
   instances = [
-    #"us-east1-b/"test-web-0"",
-    #"us-east1-c/test-web-1"
-    #"${element(var.zone, count.index)}/${element(google_compute_instance.vm.*.name, count.index)}"
     "${google_compute_instance.vm.*.self_link}",
   ]
 
